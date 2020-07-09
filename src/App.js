@@ -25,8 +25,8 @@ function App() {
            <Route path="/category" component={Category}/>
            <Route path="/products" component={Products}/>
            <Route path="/login" component={Login} PrivateRoute={PrivateRoute}/>
-           <PrivateRoute authed={fakeAuth.isAuthenticated} path='/products' component = {Products} />
            <Route path="/admin" component={Admin}/>
+           <PrivateRoute authed={fakeAuth.isAuthenticated} path='/admin' component = {Admin} />
            
           
            
